@@ -14,14 +14,18 @@
                     <li class = "nav-item"><a href = "#">Temp</a></li>
                 </ul>
             </nav>
-            <div class = "pop-up">
-              <button class = "pop-up-exit">X</button>
-              <p class = "pop-up-title">Stay Updated </p>
-              <p class = "pop-up-text">Enter your email below to recieve our newsletter on updates, premium offers, and the latest products: </p>
-              <input class = "pop-up-input" type = "text" placeholder="Email Address" required>
-              <button class = "pop-up-submit">Submit</button>
-              <p class = "pop-up-later">Remind me later >></p>
-            </div>
+            <div class = "exit" id = "pop-up-background">
+              <div class = "exit" id = "pop-up">
+                <p class = "pop-up-exit" id = "pop-up-exit">&#10006;</p>
+                <p class = "pop-up-title">Stay Updated </p>
+                <p class = "pop-up-text">Enter your email below to recieve our newsletter on updates, premium offers, and the latest products: </p>
+                <p class = "exit" id = "pop-up-valid-email">Please enter a valid email.</p>
+                <input class = "pop-up-input" type = "text" placeholder="Email Address" required id = "pop-up-input">
+                <button class = "pop-up-submit" id = "pop-up-submit">Submit</button>
+                <p class = "pop-up-later" id = "pop-up-later">Remind me later >></p>
+              </div>
+          </div>
+         
             <div class = "image-container"> 
                 <p class = "book-advert">Take a day off and relax at the Pacifica Spa.</p>
                 <button class = "book-now">Book Now</button>
@@ -70,4 +74,44 @@
                       </div>
               </div>
         </body>
+        <script>
+          const popUpBackground = document.getElementById('pop-up-background');
+          const popUp = document.getElementById('pop-up');
+          const popUpExit = document.getElementById('pop-up-exit');
+          const popUpInput = document.getElementById('pop-up-input');
+          const popUpSubmit = document.getElementById('pop-up-submit');
+          const popUpLater = document.getElementById('pop-up-later');
+          const popUpValidEmail = document.getElementById('pop-up-valid-email');
+
+          window.onload = function(){
+            setTimeout(loadAfterTime, 4000)
+          };
+
+          function loadAfterTime() { 
+            popUpBackground.classList.remove('exit');
+            popUp.classList.remove('exit');
+            popUpBackground.classList.add('pop-up-background');
+            popUp.classList.add('pop-up');
+          }
+
+          popUpExit.addEventListener('click', event => {
+            popUpBackground.classList.add('exit');
+            popUp.classList.add('exit');
+          });
+
+          popUpSubmit.addEventListener('click', event => {
+            if(popUpInput.value.match(/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/)){
+              popUpBackground.classList.add('exit');
+              popUp.classList.add('exit');
+            } else {
+              popUpValidEmail.classList.remove('exit');
+              popUpValidEmail.classList.add('pop-up-valid-email');
+            }
+          });
+
+          popUpLater.addEventListener('click', event => {
+            popUpBackground.classList.add('exit');
+            popUp.classList.add('exit');
+          });
+        </script>
     </html>
