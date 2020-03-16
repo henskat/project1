@@ -2,16 +2,17 @@
     <html>
         <head>
             <link href="style.css" rel="stylesheet" type="text/css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         </head>
         <body>
             <nav>
                 <span class = "title"><a href = "#">Pacifica</a></span>
                 <ul class = "nav">
                     <li class = "nav-item"><a href = "#">Home</a></li>
-                    <li class = "nav-item"><a href = "#">About</a></li>
+                    <li class = "nav-item"><a href = "#">About Us</a></li>
                     <li class = "nav-item"><a href = "#">Services</a></li>
-                    <li class = "nav-item"><a href = "#">Contact</a></li>
-                    <li class = "nav-item"><a href = "#">Temp</a></li>
+                    <li class = "nav-item"><a href = "#">Specials</a></li>
+                    <li class = "nav-item"><a href = "#">Contact Us</a></li>
                 </ul>
             </nav>
             <div class = "exit" id = "pop-up-background">
@@ -36,7 +37,7 @@
                 <div id="chester">
                   <div id="left-arm"></div>
                   <div id="torso">
-                        <img class = "about-picture" src = "https://cdn.pixabay.com/photo/2015/03/23/17/43/relaxation-686392_960_720.jpg">
+                        <img class = "about-picture" src = "https://img.freepik.com/free-photo/spa-arrangement-with-towel-soap-salt_23-2148268482.jpg?size=626&ext=jpg">
                     <div class = "about-texts">
                     <p class = "about-title">About Us</p>
                     <p class = "about-paragraph">&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
@@ -47,9 +48,33 @@
                   <div id="right-arm"></div>
                 </div>
                 <div class = "center">
-                    <div class="center-left-arm"></div>
-                    <p>Our Services</p>
-                    <div class="center-right-arm"></div>
+                    <div class = "our-services-div">
+                      <p class = "our-services">Our Services</p>
+                    </div>
+                    <div class = "cards">
+                      <div class="center-left-arm"></div>
+
+                      <div class = "card"> 
+                        <img src = "https://media.istockphoto.com/photos/woman-having-facial-mask-at-beauty-salon-picture-id133557705?k=6&m=133557705&s=612x612&w=0&h=poXIFQuaqJtGXlXWMofs3eC1Tbkw5zkniay5FW1L3bc=" class = "card-image">
+                        <p class = "card-title">Facials</p>
+                        <p class = "card-text"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <button class = "card-view">View</button>
+                      </div>
+                      <div class = "card">
+                        <img src = "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class = "card-image">
+                        <p class = "card-title">Massages</p>
+                        <p class = "card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <button class = "card-view">View</button>
+                      </div>
+                      <div class = "card">
+                        <img src = "https://images.unsplash.com/photo-1541088120351-d566aa6ac53f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class = "card-image">
+                        <p class = "card-title">Beauty</p>
+                        <p class = "card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <button class = "card-view">View</button>
+                      </div>
+                      <div class="center-right-arm"></div>
+
+                  </div>
                 </div>
                 <div id="root">
                     <div id="chester">
@@ -62,16 +87,47 @@
                         <p class = "about-paragraph">&nbsp;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                        <button class = "about-read-more">Read More</button>
                         </div>
-                        <img class = "about-picture-two" src = "https://cdn.pixabay.com/photo/2015/03/23/17/43/relaxation-686392_960_720.jpg">
+                        <img class = "about-picture" src = "https://cdn.pixabay.com/photo/2015/03/23/17/43/relaxation-686392_960_720.jpg">
                         </div>
                       <div id="right-arm"></div>
                     </div>
-                    <div class="footer">
-                        <p>Subscribe</p>
+                    <div class="subscribe-footer">
+                        <p class = "subscribe-title">Subscribe</p>
+                        <p class = "subscribe-text">Sign up for the newsletter to get updates on products, services, and specials: </p>
+                        <input placeholder="Email Address" class = "subscribe-input" type = "text">
+                        <button class = "subscribe-submit">Submit</button>
                       </div>
                     <div class="footer">
-                        <p>Footer</p>
+                      <div class = "footer-container">
+                        <div class = "footer-side" >
+                          <p class = "footer-title">Hours</p>
+                          <div class  = "hours">
+                            <p class = "footer-hours"><b>Monday - Friday:</b> 10:00 a.m. - 5:00 p.m.</p>
+                            <p class = "footer-hours"><b>Saturday:</b> 9:00 a.m. - 6:00 p.m.</p>
+                            <p class = "footer-hours"><b>Sunday:</b> closed</p>
+                        </div>
+                        </div>
+                        <div class = "footer-middle">
+                          <p>Pacifica</p>
+                          <p class = "footer-text">We at Pacifica are commited to giving each customer a satisfying, relaxing, and enjoyable experience.</p>
+                          <ul class="social-icons">
+                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="linkedin" href="#"><i class="fa fa-instagram"></i></a></li>   
+                          </ul>
+                        </div>
+                        <div class = "footer-side">
+                          <p class = "footer-title">Contact</p>
+                          <div class = "contact">
+                            <p class = "footer-contact">1329 Oakland Street, St. Paul, Minnesota 55119</p>
+                            <p class = "footer-contact"><b>Email:</b> pacifica-spa@gmail.com</p>
+                            <p class = "footer-contact"><b>Phone:</b> 651-578-9699</p>
+                        </div>
+                        </div>
                       </div>
+                      <div class = "footer-copyright"><p>Copyright 2020 &copy; All rights reserved.</p></div>
+
+                    </div>
               </div>
         </body>
         <script>
@@ -111,7 +167,8 @@
 
           popUpLater.addEventListener('click', event => {
             popUpBackground.classList.add('exit');
-            popUp.classList.add('exit');
+            popUp.classList.add('exit'); 
+            setTimeout(loadAfterTime, 4000)
           });
         </script>
     </html>
