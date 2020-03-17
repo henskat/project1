@@ -154,15 +154,23 @@ li>a, .title>a{
     background-image: url(https://cdn.pixabay.com/photo/2018/02/27/03/36/spa-3184610_960_720.jpg);
     background-size: cover;
     width: 100%;
-    height:900px;
+    height: 100vh;
     text-align: center;
     position: relative;
 }
-.book-now{
+.advert-container{
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-now{
+
     width: 200px;
     height: 75px;
     background-color: rgba(0, 0, 0, 0.25);
@@ -175,8 +183,6 @@ li>a, .title>a{
     outline: none;
 }
 .book-advert{
-    margin: 0px;
-    padding-top: 335px;
     font-size: 23pt;
     color: white;
     letter-spacing: 2px;
