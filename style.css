@@ -170,7 +170,6 @@ li>a, .title>a{
 }
 
 .book-now{
-    z-index: 10000;
     width: 200px;
     height: 75px;
     background-color: rgba(0, 0, 0, 0.25);
