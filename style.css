@@ -1,7 +1,8 @@
 body{
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
+
 .nav{
     padding-left: 0px;
     padding-right: 0px;
@@ -177,8 +178,8 @@ nav{
 }
 
 .title{
-    letter-spacing: 3px;
-    font-size: 1.75em;
+    font-size: 2em;
+    font-family: 'Bellota Text', cursive;
 }
 
 li>a, .title>a{
@@ -210,7 +211,7 @@ li>a, .title>a{
     height: 53px;
     background-color: rgba(0, 0, 0, 0.25);
     border: 3px white solid;
-    font-size: 1.25em;
+    font-size: 1.15em;
     color: white;
     cursor: pointer;
     text-transform: uppercase;
@@ -503,8 +504,6 @@ li>a, .title>a{
 .footer-middle{
     border-right: 1px solid white;
     border-left: 1px solid white;
-    font-size: 19pt;
-    letter-spacing: 2px;
     padding-right: 2%;
     padding-left: 2%;
     display: flex;
@@ -518,23 +517,20 @@ li>a, .title>a{
     line-height: 1.25;
 }
 
-.footer-title{
-    font-size: 14pt;
-    margin-bottom: 12px;
-}
-
 .social-icons{
     display: flex;
     flex-direction: row;
     justify-content: center;
     list-style-type: none;
     padding: 0px;
+    font-size: 1em;
 }
 
 .fa{
     padding-right: 15px;
     padding-left: 15px;
     color: #B8B8B8;
+    
 }
 
 .fa:hover{
@@ -544,4 +540,10 @@ li>a, .title>a{
 .footer-copyright{
     margin-bottom: 1%;
     font-size: 10pt;
+}
+
+.pacifica{
+    font-size: 1.5em;
+    font-family: 'Bellota Text', cursive;
+    margin-bottom: 0;
 }
