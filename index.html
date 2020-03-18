@@ -11,7 +11,14 @@
                 <ul class = "nav">
                     <li class = "nav-item"><a href = "#">Home</a></li>
                     <li class = "nav-item"><a href = "#">About Us</a></li>
-                    <li class = "nav-item"><a href = "#">Services</a></li>
+                    <li class = "nav-item services-category">
+                      <a href = "#">Services</a>
+                      <ul class = "services-list-dropdown">
+                        <li class = "services-list-item ">Facials</li>
+                        <li class = "services-list-item ">Massages</li>
+                        <li class = "services-list-item ">Beauty</li>
+                      </ul>
+                    </li>
                     <li class = "nav-item"><a href = "#">Specials</a></li>
                     <li class = "nav-item"><a href = "#">Contact Us</a></li>
                 </ul>
@@ -130,44 +137,44 @@
               </div>
         </body>
         <script>
-          const popUpBackground = document.getElementById('pop-up-background');
-          const popUp = document.getElementById('pop-up');
-          const popUpExit = document.getElementById('pop-up-exit');
-          const popUpInput = document.getElementById('pop-up-input');
-          const popUpSubmit = document.getElementById('pop-up-submit');
-          const popUpLater = document.getElementById('pop-up-later');
-          const popUpValidEmail = document.getElementById('pop-up-valid-email');
+          // const popUpBackground = document.getElementById('pop-up-background');
+          // const popUp = document.getElementById('pop-up');
+          // const popUpExit = document.getElementById('pop-up-exit');
+          // const popUpInput = document.getElementById('pop-up-input');
+          // const popUpSubmit = document.getElementById('pop-up-submit');
+          // const popUpLater = document.getElementById('pop-up-later');
+          // const popUpValidEmail = document.getElementById('pop-up-valid-email');
 
-          window.onload = function(){
-            setTimeout(loadAfterTime, 4000)
-          };
+          // window.onload = function(){
+          //   setTimeout(loadAfterTime, 4000)
+          // };
 
-          function loadAfterTime() { 
-            popUpBackground.classList.remove('exit');
-            popUp.classList.remove('exit');
-            popUpBackground.classList.add('pop-up-background');
-            popUp.classList.add('pop-up');
-          }
+          // function loadAfterTime() { 
+          //   popUpBackground.classList.remove('exit');
+          //   popUp.classList.remove('exit');
+          //   popUpBackground.classList.add('pop-up-background');
+          //   popUp.classList.add('pop-up');
+          // }
 
-          popUpExit.addEventListener('click', event => {
-            popUpBackground.classList.add('exit');
-            popUp.classList.add('exit');
-          });
+          // popUpExit.addEventListener('click', event => {
+          //   popUpBackground.classList.add('exit');
+          //   popUp.classList.add('exit');
+          // });
 
-          popUpSubmit.addEventListener('click', event => {
-            if(popUpInput.value.match(/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/)){
-              popUpBackground.classList.add('exit');
-              popUp.classList.add('exit');
-            } else {
-              popUpValidEmail.classList.remove('exit');
-              popUpValidEmail.classList.add('pop-up-valid-email');
-            }
-          });
+          // popUpSubmit.addEventListener('click', event => {
+          //   if(popUpInput.value.match(/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/)){
+          //     popUpBackground.classList.add('exit');
+          //     popUp.classList.add('exit');
+          //   } else {
+          //     popUpValidEmail.classList.remove('exit');
+          //     popUpValidEmail.classList.add('pop-up-valid-email');
+          //   }
+          // });
 
-          popUpLater.addEventListener('click', event => {
-            popUpBackground.classList.add('exit');
-            popUp.classList.add('exit'); 
-            setTimeout(loadAfterTime, 4000)
-          });
+          // popUpLater.addEventListener('click', event => {
+          //   popUpBackground.classList.add('exit');
+          //   popUp.classList.add('exit'); 
+          //   setTimeout(loadAfterTime, 4000)
+          // });
         </script>
     </html>
