@@ -74,7 +74,6 @@ nav{
     padding-right: 2%;
 }
 .pop-up{
-    animation: fadeIn ease 1s;
     position: fixed;
     width: 40%;
     height: 60%;
@@ -222,6 +221,7 @@ li>a, .title>a{
     font-size: 1.25em;
     color: white;
     letter-spacing: 2px;
+    z-index: 1200;
 }
 
 .book-now:hover{
@@ -348,7 +348,7 @@ li>a, .title>a{
   
   .card{
     width: 295px;
-    height: 380px;
+    height: auto;
     box-sizing: border-box;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -394,7 +394,7 @@ li>a, .title>a{
     border: 2px #93bebd solid;
     background-color: #93bebd;
     color: white;
-    font-size: 1.25em;
+    font-size: 1.05em;
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -404,6 +404,7 @@ li>a, .title>a{
     margin-top: 1%;
     padding-top: 3px;
     padding-bottom: 3px;
+    margin-bottom: 5px;
   }
 
   .card-view:hover{
@@ -526,14 +527,14 @@ li>a, .title>a{
     font-size: 1em;
 }
 
-.fa{
+.fa-facebook, .fa-instagram, .fa-twitter{
     padding-right: 15px;
     padding-left: 15px;
     color: #B8B8B8;
     
 }
 
-.fa:hover{
+.fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover{
     color: white;
 }
 
@@ -546,4 +547,127 @@ li>a, .title>a{
     font-size: 1.5em;
     font-family: 'Bellota Text', cursive;
     margin-bottom: 0;
+
 }
+
+.review{
+    width: 300px;
+    height: 250px;
+    box-sizing: border-box;
+    border: 2px solid rosybrown;
+    margin-right: 5%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 25px 40px -20px rgba(0, 0, 0, 0.2);
+}
+
+.review-one, .review-two, .review-three{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reviews-title {
+    font-size: 1.75em;
+    background-color: rosybrown;
+    padding: 12px;
+    color: white;
+    border-left: 9px solid rgb(159,95,95);
+    margin-top: 0;
+}
+.arrows{
+    float: right;
+    transform: rotate(90deg);
+}
+
+.stars{
+    align-self: center;
+}
+.fa-star{
+    color: #F8De7e;
+    margin-top: 10px;
+    padding: 7px;
+}
+
+.empty{
+    text-shadow: 0px 0px 1px goldenrod, 0px 0px 1px goldenrod;
+    color: white; 
+}
+
+.up:hover, .down:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.up, .down{
+    margin-right: 2px;
+    font-weight: 600;
+    opacity: 0.5;
+    user-select: none;
+}
+
+.elementToFadeInAndOut{
+    animation-timing-function: ease-in-out 1s;
+}
+
+.review-circle{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.75em;
+    color: 		#989898;
+}
+
+.fade-in {
+    animation: fadeIn ease-in 1s;
+    -webkit-animation: fadeIn ease-in 1s;
+    -moz-animation: fadeIn ease-in 1s;
+    -o-animation: fadeIn ease-in 1s;
+    -ms-animation: fadeIn ease-in 1s;
+  }
+  
+  
+  @keyframes fadeIn{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
