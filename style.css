@@ -178,7 +178,8 @@ nav{
 
 .title{
     font-size: 2em;
-    font-family: 'Bellota Text', cursive;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
 }
 
 li>a, .title>a{
@@ -545,13 +546,13 @@ li>a, .title>a{
 
 .pacifica{
     font-size: 1.5em;
-    font-family: 'Bellota Text', cursive;
+    font-family: 'Montserrat', sans-serif;
     margin-bottom: 0;
 
 }
 
 .review{
-    width: 300px;
+    width: 325px;
     height: 250px;
     box-sizing: border-box;
     border: 2px solid rosybrown;
