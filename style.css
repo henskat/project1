@@ -21,7 +21,7 @@ body{
 .nav-item:hover{
  background-color: rgba(0,0,0,0.65);
 }
-nav{
+header{
     background-color: rgba(0, 0, 0, 0.6);
     padding-top: 20px;
     text-align: center;
@@ -323,12 +323,8 @@ li>a, .title>a{
       margin-top: 100px;
       margin-bottom: 100px;
       background-color:#D0D0D0;
-      height: 550px;
+      height: auto;
       width: 100%;
-  }
-
-  .about-picture-two{
-      float: right;
   }
 
   .our-services {
@@ -357,7 +353,11 @@ li>a, .title>a{
     display: flex;
     flex-direction: column;
 }
-
+ .card-picture-div{ 
+     width: 100%; 
+    height: 100%;
+    box-sizing: border-box;
+}
   #center-left-arm {
     flex-basis: 50%;
   }
@@ -368,7 +368,7 @@ li>a, .title>a{
 
   .card-image{
       width: 100%;
-      height: 50%;
+      height: 100%;
       object-fit: cover;
   }
 
@@ -389,10 +389,15 @@ li>a, .title>a{
     font-size: 1em;
     color:  #606060;
   }
+  .card-text-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
   .card-view{
     width: 50%;
-    border: 2px #93bebd solid;
+    border: 3px #93bebd solid;
     background-color: #93bebd;
     color: white;
     font-size: 1.05em;
@@ -519,6 +524,10 @@ li>a, .title>a{
     line-height: 1.25;
 }
 
+.footer-title{
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
 .social-icons{
     display: flex;
     flex-direction: row;
@@ -552,7 +561,6 @@ li>a, .title>a{
 }
 
 .review{
-    width: 325px;
     height: 250px;
     box-sizing: border-box;
     border: 2px solid rosybrown;
@@ -627,7 +635,7 @@ li>a, .title>a{
     -ms-animation: fadeIn ease-in 1s;
   }
   
-  
+
   @keyframes fadeIn{
     0% {
       opacity:0;
@@ -672,3 +680,131 @@ li>a, .title>a{
       opacity:1;
     }
   }
+  #menu-button{
+      display: none;
+  }
+  @media(max-width: 1000px){
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 75%;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+    .card-picture-div{
+        align-self: center;
+        display: flex;
+    }
+    .card-image{
+        object-fit: cover;
+        align-self: center;
+    }
+    .card-text-div{
+        width: 60%;
+    }
+  }
+  @media (max-width: 768px) {
+    #menu-button{
+        display: block;
+        align-self: stretch;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    header{
+        padding-top: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* padding: 10px; */
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 60px;
+    }
+    .title{
+        margin-top: 0px;
+        padding: 10px;
+    }
+    nav{
+        display: none;
+        position: absolute;
+        top: 73%;
+        right: 0;
+    }
+    nav.open {
+        display: block;
+      }
+    nav > ul {
+        flex-direction: column;
+      }
+    
+    nav > ul > li:active, .active {
+        background-color: rgba(0,0,0,0.85);
+      }
+      .nav{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          background-color: rgba(0,0,0,0.85);
+      }
+      .nav-item:hover{
+          background-color: rgba(0,0,0,0.5);
+      }
+      .services-category:active > .services-list-dropdown{
+          display: none;
+      }
+      .about-picture{
+          float: none;
+          max-width: 100%;
+      }
+      #torso{
+          flex-direction: column;
+      }
+      .about-texts{
+          padding-left: 0px;
+      }
+      .about-title{
+          margin-top: 28px;
+      }
+
+      .footer-container{
+          flex-direction: column;
+          align-items: center;
+      }
+      .review-one, .review-two, .review-three{
+        flex-direction: column;
+    }
+    .review{
+        margin-bottom: 20px;
+    }
+      .footer-middle{
+          border-left: none;
+          border-right: none;
+          border-top: 1px solid white;
+          border-bottom: 1px solid white;
+      }
+      .review-circle{
+          display: none;
+      }
+      .triangle, .rectangle{
+          display: none;
+      }
+  }
+
+  @media (max-width: 600px) {
+    .card-image{
+        display: none;
+    }
+    .card-picture-div{
+        display: none;
+    }
+    .card-text-div{
+        width: 100%;
+    }
+}

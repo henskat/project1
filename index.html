@@ -7,10 +7,19 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link href="https://fonts.googleapis.com/css?family=Bellota+Text&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
         </head>
         <body>
-            <nav>
+            <header>
                 <span class = "title"><a href = "#">Pacifica</a></span>
+                <div id="menu-button">
+                  <svg viewBox="0 0 100 80" width="30" height="30">
+                    <rect fill="white" width="100" height="15"></rect>
+                    <rect fill="white" y="30" width="100" height="15"></rect>
+                    <rect fill="white" y="60" width="100" height="15"></rect>
+                  </svg>
+                </div>
+                <nav id = "navigation">
                 <ul class = "nav">
                     <li class = "nav-item"><a href = "#">Home</a></li>
                     <li class = "nav-item"><a href = "#">About Us</a></li>
@@ -25,7 +34,8 @@
                     <li class = "nav-item"><a href = "#">Specials</a></li>
                     <li class = "nav-item"><a href = "#">Contact Us</a></li>
                 </ul>
-            </nav>
+                </nav>
+              </header>
             <div class = "exit" id = "pop-up-background">
               <div class = "exit" id = "pop-up">
                 <p class = "pop-up-exit" id = "pop-up-exit">&#10006;</p>
@@ -68,22 +78,34 @@
                       <div class="center-left-arm"></div>
 
                       <div class = "card"> 
+                        <div class = "card-picture-div">
                         <img src = "https://media.istockphoto.com/photos/woman-having-facial-mask-at-beauty-salon-picture-id133557705?k=6&m=133557705&s=612x612&w=0&h=poXIFQuaqJtGXlXWMofs3eC1Tbkw5zkniay5FW1L3bc=" class = "card-image">
+                        </div>
+                        <div class = "card-text-div">
                         <p class = "card-title">Facials</p>
                         <p class = "card-text"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. </p>
                         <button class = "card-view">View</button>
+                        </div>
                       </div>
                       <div class = "card">
+                        <div class = "card-picture-div">
                         <img src = "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class = "card-image">
+                        </div>
+                        <div class = "card-text-div">
                         <p class = "card-title">Massages</p>
                         <p class = "card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</p>
                         <button class = "card-view">View</button>
+                        </div>
                       </div>
                       <div class = "card">
+                        <div class = "card-picture-div">
                         <img src = "https://images.unsplash.com/photo-1541088120351-d566aa6ac53f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class = "card-image">
+                        </div>
+                        <div class = "card-text-div">
                         <p class = "card-title">Beauty</p>
                         <p class = "card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.</p>
                         <button class = "card-view">View</button>
+                        </div>
                       </div>
                       <div class="center-right-arm"></div>
 
@@ -92,11 +114,10 @@
                 <div id="root">
                     <div id="chester">
                       <div id="left-arm"></div>
-                      <div id="torso">
-                         
+                      <div id="torso">  
                         <div class = "reviews-container">
                         <p class = "reviews-title">Reviews<span class = "arrows"><span class = "up" id = "up-arrow">&lt;</span><span class = "down" id = "down-arrow">&gt;</span> </span></p>
-                          <div class = "review-one" id = "review-one">
+                        <div class = "review-one" id = "review-one">
                             <div class = "review">
                               <div class = "stars">
                                 <span><i class = "fa fa-star fa-lg"></i><i class = "fa fa-star fa-lg"></i><i class = "fa fa-star fa-lg"></i><i class = "fa fa-star fa-lg"></i><i class = "fa fa-star fa-lg empty"></i></span>
@@ -116,7 +137,6 @@
                                 <span><i class = "fa fa-star fa-lg"></i><i class = "fa fa-star fa-lg"></i><i class = "fa fa-star fa-lg"></i><i class = "fa fa-star fa-lg"></i><i class = "fa fa-star fa-lg"></i></span>
                                </div>
                               <p class = "card-title">Mary C.</p>
-
                               <p class = "card-text"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. </p>
                             </div>
                           </div>
@@ -303,6 +323,19 @@
             popUpBackground.classList.add('exit');
             popUp.classList.add('exit'); 
             setTimeout(loadAfterTime, 4000)
+          });
+          const menuButton = document.getElementById('menu-button');
+          const navigation = document.getElementById('navigation');
+    
+          menuButton.addEventListener('click', event => {
+            navigation.classList.toggle('open');
+            menuButton.classList.toggle('active');
+            event.stopPropagation();
+          });
+
+          document.addEventListener('click', () => {
+            navigation.classList.remove('open');
+            menuButton.classList.remove('active');
           });
         </script>
     </html>
