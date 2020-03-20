@@ -197,7 +197,7 @@ header{
     letter-spacing: 2px;
 }
 
-li>a, .title>a{
+a, .title>a{
     text-decoration: none;
     color: white;
 }
@@ -411,7 +411,7 @@ li>a, .title>a{
 }
 
   .card-view{
-    width: 50%;
+    width: 100%;
     border: 3px #93bebd solid;
     background-color: #93bebd;
     color: white;
@@ -425,6 +425,8 @@ li>a, .title>a{
     margin-top: 1%;
     padding-top: 3px;
     padding-bottom: 3px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-bottom: 5px;
   }
 
@@ -727,7 +729,7 @@ li>a, .title>a{
         height: auto;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     #menu-button{
         display: block;
         align-self: stretch;
