@@ -291,7 +291,7 @@ a, .title>a{
     flex-direction: row;
   }
 
-  .about-texts{
+  .about-texts, .gift-card-texts {
       padding-left: 50px;
       display: flex;
       flex-direction: column;
@@ -309,13 +309,13 @@ a, .title>a{
       font-size: 1em;
       margin-top: 0;
   }
-  .about-picture{
+  .about-picture, .gift-card-picture{
       max-width: 45%;
       float: left;
       border: 7px double    #B0B0B0;
       object-fit: cover;
   }
-  .about-read-more{
+  .about-read-more, .gift-card-purchase{
     margin-top: 20px;
     width: 160px;
     height: 48px;
@@ -329,7 +329,7 @@ a, .title>a{
     outline: none;
     font-weight: 500;
   }
-  .about-read-more:hover{
+  .about-read-more:hover,.gift-card-purchase:hover{
       background-color: rgb(159,95,95);
       color: white;
       transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out;

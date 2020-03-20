@@ -3,7 +3,8 @@
         <head>
             <title>Pacifica</title>
             <link href="style.css" rel="stylesheet" type="text/css">
-            <link href = "style-specials.css" rel = "stylesheet" type = "text/css">
+            <link href = "style-about-us.css" rel = "stylesheet" type = "text/css">
+            <link href="style-specials.css" rel="stylesheet" type="text/css">
             <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link href="https://fonts.googleapis.com/css?family=Bellota+Text&display=swap" rel="stylesheet">
@@ -12,7 +13,7 @@
         </head>
         <body>
             <header>
-                <span class = "title"><a href = "#">Pacifica</a></span>
+                <span class = "title"><a href = "index.html">Pacifica</a></span>
                 <div id="menu-button">
                   <svg viewBox="0 0 100 80" width="30" height="30">
                     <rect fill="white" width="100" height="15"></rect>
@@ -21,27 +22,46 @@
                   </svg>
                 </div>
                 <nav id = "navigation">
-                <ul class = "categories">
-                    <li class = "category"><a href = "index.html">Home</a></li>
-                    <li class = "category"><a href = "about-us.html">About Us</a></li>
-                    <li class =  "category">
-                      <a href = "#">Services</a>
-                      <ul class = "dropdown">
-                        <li><a href = "services-facials.html">Facials</a></li>
-                        <li><a href = "services-massages.html">Massages</a></li>
-                        <li><a href = "services-beauty.html">Beauty</a></li>
+                    <ul class = "categories">
+                        <a href = "index.html"><li class = "category">Home</li></a>
+                        <a href = "about-us.html"> <li class = "category">About Us</li></a>
+                          <li class =  "category">
+                            <a href = "#">Services</a>
+                            <ul class = "dropdown">
+                              <a href = "services-facials.html"><li>Facials</li></a>
+                              <a href = "services-massages.html"><li>Massages</li></a>
+                              <a href = "services-beauty.html"><li>Beauty</li></a>
+                            </ul>
+                          </li>
+                          <li class = "category"><a href = "#">Specials</a>
+                            <ul class = "dropdown">
+                              <a href = "specials-memberships.html"><li>Memberships</a></li>
+                              <a href = "specials-gift-cards.html"><li>Gift Cards</li></a>
+                            </ul></li>
+                          <a href = "contact-us.html"><li class = "category">Contact Us</li></a>
                       </ul>
-                    </li>
-                    <li class = "category"><a href = "#">Specials</a>
-                      <ul class = "dropdown">
-                        <li><a href = "specials-memberships.html">Memberships</a></li>
-                        <li><a href = "specials-gift-cards.html">Gift Cards</a></li>
-                      </ul></li>
-                    <li class = "category"><a href = "contact-us.html">Contact Us</a></li>
-                </ul>
                 </nav>
               </header>
-              <!---->
+              <div class = "body">
+                <div class = "background-header"></div>
+                <div id="root-about">
+                    <div id="chester">
+                      <div id="left-arm"></div>
+                      <div id="torso-one">
+                        <h2 class = "about-us-title-ref">Gift Cards</h2>
+                        <div id = "torso" class = "gift-card-torso">
+                        <img class = "gift-card-picture" src = "https://images.pexels.com/photos/842876/pexels-photo-842876.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                        <div class = "gift-card-texts">
+                        <p class = "about-title-ref">The Perfect Gift for a Loved One</p>
+                        <p class = "about-paragraph">&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <p class = "about-paragraph">&nbsp;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                        <a href = "#"><button class = "gift-card-purchase">Purchase</button></a>
+                      </div>
+                        </div>
+                        </div>
+                      <div id="right-arm"></div>
+                    </div>
+                    <div class = "background-footer"></div>
               <footer class="footer">
                 <div class = "footer-container">
                   <div class = "footer-side" >
@@ -68,5 +88,6 @@
                 </div>
                 <div class = "footer-copyright"><p>Copyright 2020 &copy; All rights reserved.</p></div>
               </footer>
+            </div>
         </body>
     </html>

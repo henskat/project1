@@ -1,0 +1,12 @@
+.gift-card-picture{
+    float: right;
+}
+
+.gift-card-texts{
+    padding-right: 50px;
+    padding-left: 10px;
+}
+
+#torso {
+    flex-direction: row-reverse;
+  }
