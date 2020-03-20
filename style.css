@@ -350,7 +350,7 @@ a, .title>a{
     color:  #484848;
   }
 
-  .cards{
+  .cards, .torso{
     display: flex;
     flex-direction: row;
     align-content: center;
