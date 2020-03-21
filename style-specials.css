@@ -10,3 +10,38 @@
 #torso {
     flex-direction: row-reverse;
   }
+
+  .across{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content:  baseline;
+    }
+
+  input, label, textarea{
+      margin: 8px;
+      height: 25px;
+      font-size: 1em;
+  }
+ .membership-div{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 15px;
+ }
+.rewards-sign-up{
+    border: 1px rgb(159,95,95) solid;
+    background-color: white;
+    color:  rgb(159,95,95);
+    font-size: 1em;
+    outline: none;
+    font-weight: 500;
+    width: 100px;
+    height: 32px;
+    cursor: pointer;
+    margin-left: 25px;
+}
+.rewards-sign-up:hover{
+      background-color: rgb(159,95,95);
+      color: white;
+      transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out;
+  }
+
