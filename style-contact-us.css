@@ -1,0 +1,88 @@
+.contact-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.two{
+    flex-direction: column;
+}
+.contact-title{
+    color: #69a5a3;
+    font-size: 1.5em;
+    font-weight: 500;
+    border-bottom: 1px solid #D3D3D3;
+    text-align: center;
+}
+.text, label{
+    color: #383838;
+}
+input, label, textarea{
+    margin-bottom: 10px;
+}
+input{
+    height: 25px;
+    width: 100%;
+    border-radius: 5px;
+
+}
+textarea{
+    width: 100%;
+    height: 75px;
+    border-radius: 5px;
+}
+form{
+    border: 1px solid #93bebd;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 50%;
+}
+.contact-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit-button{
+    margin-top: 10px;
+    width: 80px;
+    height: 35px;
+    border: 2px #69a5a3 solid;
+    background-color: white;
+    font-size: 1em;
+    color:  #69a5a3;;
+    cursor: pointer;
+    outline: none;
+    font-weight: 500;
+    border-radius: 10px;
+  }
+  .submit-button:hover{
+      background-color: #69a5a3;;
+      color: white;
+      transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out;
+  }
+  .submit-button-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+@media(max-width: 800px){
+    .contact-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    form{
+        width: 75%;
+    }
+}

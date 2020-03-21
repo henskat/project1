@@ -2,31 +2,37 @@
     float: right;
 }
 
-.gift-card-texts{
-    padding-right: 50px;
-    padding-left: 10px;
+#torso-one{
+    max-width: 100%;
 }
-
 #torso {
     flex-direction: row-reverse;
   }
 
+  .icon-text-ref{
+      padding: 10px;
+  }
   .across{
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content:  baseline;
+      justify-content:  space-evenly;
+      flex-wrap: wrap;
     }
 
-  input, label, textarea{
+  input, label{
       margin: 8px;
       height: 25px;
       font-size: 1em;
   }
  .membership-div{
+     border: 1px solid rgba(188, 143, 143, .25);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     padding: 15px;
- }
+}
+#gift-card-text{
+    padding-right: 35px;
+}
 .rewards-sign-up{
     border: 1px rgb(159,95,95) solid;
     background-color: white;
@@ -34,10 +40,14 @@
     font-size: 1em;
     outline: none;
     font-weight: 500;
-    width: 100px;
-    height: 32px;
+    width: 100%;
+    height: auto;
     cursor: pointer;
-    margin-left: 25px;
+    margin-left: 1%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .rewards-sign-up:hover{
       background-color: rgb(159,95,95);
@@ -45,3 +55,26 @@
       transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out;
   }
 
+.rewards-texts{
+    align-self: center;
+}
+
+
+@media(max-width: 900px) {
+    .gift-card-picture{
+        float: none;
+        max-width: 100%;
+    }
+    #torso{
+      flex-direction: column;
+    }
+    .across{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+     }
+     #gift-card-text{
+      padding: 0px;
+  }
+
+}
