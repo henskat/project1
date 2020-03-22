@@ -156,6 +156,10 @@
         flex-direction: column;
         height: auto;
     }
+    .card-text-div{
+        height: 100%;
+        width: fit-content;
+    }
     .card-image{
         display: inline-block;
     }
