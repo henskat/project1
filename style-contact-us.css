@@ -43,6 +43,7 @@ form{
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     width: 50%;
+    background-color: rgba(105, 165, 163, 0.25);
 }
 .contact-form{
     width: 100%;
@@ -66,7 +67,7 @@ form{
     border-radius: 10px;
   }
   .submit-button:hover{
-      background-color: #69a5a3;;
+      background-color: #69a5a3;
       color: white;
       transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out;
   }
