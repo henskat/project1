@@ -72,6 +72,7 @@
     justify-content: space-evenly;
 }
 .service-card{
+    box-sizing: border-box;
     width: 240px;
     height: auto;
     margin: 1%;
@@ -80,17 +81,12 @@
     border: 1px#D3D3D3 solid;
     display: flex;
     flex-direction: column;
-    flex-shrink: 0;
-
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card-text-div{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-basis: max-content;
-    flex-shrink: 0;
+    height: 225px;
 }
 
 .service-title-container{
