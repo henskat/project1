@@ -58,18 +58,17 @@ form{
     width: 80px;
     height: 35px;
     border: 2px #69a5a3 solid;
-    background-color: white;
+    background-color: #69a5a3;
     font-size: 1em;
-    color:  #69a5a3;;
+    color:  white;
     cursor: pointer;
     outline: none;
     font-weight: 500;
     border-radius: 10px;
   }
   .submit-button:hover{
-      background-color: #69a5a3;
-      color: white;
-      transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
   }
   .submit-button-div{
     width: 100%;
