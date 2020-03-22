@@ -66,6 +66,7 @@
 }
 
 .card-image{
+    height: 200px;
     display: inline-block;
 }
 
@@ -73,10 +74,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: flex-start;
 }
 .service-card{
     width: 240px;
-    height: auto;
+    height: fit-content;
     margin: 1%;
     margin-bottom: 30px;
     background-color: white;
@@ -133,6 +135,10 @@
     .service-card{
         width: 80%;
         flex-direction: row;
+    }
+    .card-image{
+        display: inline;
+
     }
     .cards-first-row {
         justify-content: center;
