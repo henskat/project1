@@ -159,6 +159,9 @@
     .card-image{
         display: inline-block;
     }
+    .card-text-div{
+        height: 100%;
+    }
     .card-picture-div{
         display: inline-block;
     }
