@@ -73,7 +73,7 @@
 }
 .service-card{
     width: 240px;
-    height: auto;
+    height: fit-content;
     margin: 1%;
     margin-bottom: 30px;
     background-color: white;
