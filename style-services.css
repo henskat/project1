@@ -154,7 +154,7 @@
     .service-card{
         width: 80%;
         flex-direction: column;
-        height: auto;
+        height: fit-content;
     }
     .card-image{
         display: inline-block;
