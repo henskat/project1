@@ -64,4 +64,7 @@
     .background-header, .background-footer{
         height: 100px;
     }
+    #below-title-content{
+        width: 100%;
+    }
 }
