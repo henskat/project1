@@ -2,7 +2,10 @@
     <html>
         <head>
           <title>Pacifica</title>
-            <link href="style.css" rel="stylesheet" type="text/css">
+          <link href="style-nav-footer.css" rel="stylesheet" type="text/css">
+          <link href = "style-body.css" rel = "stylesheet" type = "text/css">
+          <link href="style-shared.css" rel="stylesheet" type="text/css">
+          <link href="style.css" rel="stylesheet" type="text/css">
             <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link href="https://fonts.googleapis.com/css?family=Bellota+Text&display=swap" rel="stylesheet">
@@ -11,35 +14,8 @@
         </head>
         <body>
             <header>
-                <span class = "title"><a href = "#">Pacifica</a></span>
-                <div id="menu-button">
-                  <svg viewBox="0 0 100 80" width="30" height="30">
-                    <rect fill="white" width="100" height="15"></rect>
-                    <rect fill="white" y="30" width="100" height="15"></rect>
-                    <rect fill="white" y="60" width="100" height="15"></rect>
-                  </svg>
-                </div>
-                <nav id = "navigation">
-                <ul class = "categories">
-                  <a href = "index.html"><li class = "category">Home</li></a>
-                  <a href = "about-us.html"> <li class = "category">About Us</li></a>
-                    <li class =  "category">
-                      <a href = "#">Services</a>
-                      <ul class = "dropdown">
-                        <a href = "services-facials.html"><li>Facials</li></a>
-                        <a href = "services-massages.html"><li>Massages</li></a>
-                        <a href = "services-beauty.html"><li>Beauty</li></a>
-                      </ul>
-                    </li>
-                    <li class = "category"><a href = "#">Specials</a>
-                      <ul class = "dropdown">
-                        <a href = "specials-rewards.html"><li>Rewards</a></li>
-                        <a href = "specials-gift-cards.html"><li>Gift Cards</li></a>
-                      </ul></li>
-                    <a href = "contact-us.html"><li class = "category">Contact Us</li></a>
-                </ul>
-                </nav>
-              </header>
+              <script src="navbar.js"></script>
+            </header>
             <div class = "exit" id = "pop-up-background">
               <div class = "exit" id = "pop-up">
                 <p class = "pop-up-exit" id = "pop-up-exit">&#10006;</p>
@@ -63,13 +39,13 @@
             <div id="root">
                 <div id="chester">
                   <div id="left-arm"></div>
-                  <div id="torso">
-                        <img class = "about-picture" src = "https://img.freepik.com/free-photo/spa-arrangement-with-towel-soap-salt_23-2148268482.jpg?size=626&ext=jpg">
-                    <div class = "about-texts">
-                    <p class = "about-title">About Us</p>
-                    <p class = "about-paragraph">&nbsp;Here at Pacifica, we work to make your experience enjoyable, relaxing, and fulfilling. We hope that by providing you a massage, facial, or beauty treatment that we can brighten your day and lessen your worries. Here at Pacifica, we view eachother as family. This includes not only us as coworkers but also all of our customers. </p>
-                    <p class = "about-paragraph">&nbsp;Pacifica started as a small business that took a leap of faith. Through the years, we have been able to sucessfully create a family of customers and pracitioners. Because of this, we hope to inspire each and every one who walks into Pacifica to take a leap of faith and do what they've been putting off.</p>
-                    <a href = "about-us.html"><button class = "about-read-more">Read More</button></a>
+                  <div class="side-by-side-content">
+                        <img class = "float-image small" src = "https://img.freepik.com/free-photo/spa-arrangement-with-towel-soap-salt_23-2148268482.jpg?size=626&ext=jpg">
+                    <div class = "side-texts left">
+                    <p class = "body-title pink">About Us</p>
+                    <p class = "content-paragraph">&nbsp;Here at Pacifica, we work to make your experience enjoyable, relaxing, and fulfilling. We hope that by providing you a massage, facial, or beauty treatment that we can brighten your day and lessen your worries. Here at Pacifica, we view eachother as family. This includes not only us as coworkers but also all of our customers. </p>
+                    <p class = "content-paragraph">&nbsp;Pacifica started as a small business that took a leap of faith. Through the years, we have been able to sucessfully create a family of customers and pracitioners. Because of this, we hope to inspire each and every one who walks into Pacifica to take a leap of faith and do what they've been putting off.</p>
+                    <a href = "about-us.html"><button class = "outlined-button">Read More</button></a>
                     </div>
                     </div>
                   <div id="right-arm"></div>
@@ -203,31 +179,7 @@
                         <button class = "subscribe-submit">Submit</button>
                       </div>
                     <footer class="footer">
-                      <div class = "footer-container">
-                        <div class = "footer-side" >
-                          <p class = "footer-title">Hours</p>
-                          <div class  = "hours">
-                            <p class = "footer-hours"><b>Monday - Friday:</b> 10:00 a.m. - 5:00 p.m.<br><b>Saturday:</b> 9:00 a.m. - 6:00 p.m.<br><b>Sunday:</b> closed</p>
-                        </div>
-                        </div>
-                        <div class = "footer-middle">
-                          <p class = "footer-title pacifica">Pacifica</p>
-                          <p class = "footer-text">We at Pacifica are commited to giving each customer a satisfying, relaxing, and enjoyable experience.</p>
-                          <ul class="social-icons">
-                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a class="linkedin" href="#"><i class="fa fa-instagram"></i></a></li>   
-                          </ul>
-                        </div>
-                        <div class = "footer-side">
-                          <p class = "footer-title">Contact</p>
-                          <div class = "contact">
-                            <p class = "footer-contact">1329 Oakland Street, St. Paul, Minnesota 55119<br><b>Email:</b> pacifica-spa@gmail.com<br><b>Phone:</b> 651-578-9699</p>
-                        </div>
-                        </div>
-                      </div>
-                      <div class = "footer-copyright"><p>Copyright 2020 &copy; All rights reserved.</p></div>
-
+                      <script src="footer.js"></script>
                     </footer>
               </div>
         </body>

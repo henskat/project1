@@ -2,9 +2,10 @@
     <html>
         <head>
             <title>Pacifica</title>
-            <link href="style.css" rel="stylesheet" type="text/css">
-            <link href = "style-about-us.css" rel = "stylesheet" type = "text/css">
-            <link href="style-specials.css" rel="stylesheet" type="text/css">
+            <link href="style-nav-footer.css" rel="stylesheet" type="text/css">
+            <link href = "style-body.css" rel = "stylesheet" type = "text/css">
+            <link href="style-shared.css" rel="stylesheet" type="text/css">
+            <link href="style-rewards.css" rel="stylesheet" type="text/css">
             <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link href="https://fonts.googleapis.com/css?family=Bellota+Text&display=swap" rel="stylesheet">
@@ -12,72 +13,38 @@
             <meta name="viewport" content="width=device-width,initial-scale=1">
         </head>
         <body>
-            <header>
-                <span class = "title"><a href = "index.html">Pacifica</a></span>
-                <div id="menu-button">
-                  <svg viewBox="0 0 100 80" width="30" height="30">
-                    <rect fill="white" width="100" height="15"></rect>
-                    <rect fill="white" y="30" width="100" height="15"></rect>
-                    <rect fill="white" y="60" width="100" height="15"></rect>
-                  </svg>
-                </div>
-                <nav id = "navigation">
-                    <ul class = "categories">
-                        <a href = "index.html"><li class = "category">Home</li></a>
-                        <a href = "about-us.html"> <li class = "category">About Us</li></a>
-                          <li class =  "category">
-                            <a href = "#">Services</a>
-                            <ul class = "dropdown">
-                              <a href = "services-facials.html"><li>Facials</li></a>
-                              <a href = "services-massages.html"><li>Massages</li></a>
-                              <a href = "services-beauty.html"><li>Beauty</li></a>
-                            </ul>
-                          </li>
-                          <li class = "category"><a href = "#">Specials</a>
-                            <ul class = "dropdown">
-                              <a href = "specials-rewards.html"><li>Rewards</a></li>
-                              <a href = "specials-gift-cards.html"><li>Gift Cards</li></a>
-                            </ul></li>
-                          <a href = "contact-us.html"><li class = "category">Contact Us</li></a>
-                      </ul>
-                </nav>
-              </header>
-              <div class = "body">
-                  <div class = "background-header"></div>
-                  <div id="root-about">
-                      <div id="chester">
-                        <div id="left-arm"></div>
-                        <div id="torso-one">
-                          <h2 class = "about-us-title-ref">Rewards</h2>
-                          <div  class = "gift-card-torso">
-                          <div class = "gift-card-texts">
-                          <p class = "about-title-ref">Build Rewards & Save Money</p>
-                          <p class = "about-paragraph">&nbsp;At Pacifica, we are proud to honor an amazing rewards program to help you save money and earn points for your loyalty to our spa. We use our rewards program as a way to show our appreciation to our clients like you! If you are a rewards member already, simply email us or ask your specialist for how many points you have earned.</p>
-
-                          <p class = "about-title-ref">Earn Points!</p>
-                          <div class = "icons-ref">
-                            <div class = "icon-ref">
-                                <i class = "fa fa-dollar fa-3x"></i>
-                                <p class = "icon-title-ref">Every $10 Spent</p>
-                                <p class = "icon-text-ref">Earn 50 points for every $10 spent on Massages and Facials. Earn 25 points for every $10 spent on Beauty.</p>
-                            </div>
-                            <div class = "icon-ref icon-middle">
-                                <i class = "fa fa-birthday-cake fa-3x"></i>
-                                <p class = "icon-title-ref">On Your Birthday</p>
-                                <p class = "icon-text-ref">Every year, we'd love to award you with 250 points and a free facial for becoming a whole year wiser!</p>
-                            </div>
-                            <div class = "icon-ref">
-                                <i class = "fa fa-phone fa-3x"></i>
-                                <p class = "icon-title-ref">Refer a Friend</p>
-                                <p class = "icon-text-ref">For every friend that you reccomend, you will gain 150 points and they will gain 100 points to start.</p>
-                            </div>
+          <header>
+            <script src="navbar.js"></script>
+          </header>
+          <div class = "background-header"></div>
+            <div id = "body">
+              <div id="body-content">
+                  <h2 class = "body-title pink">Rewards</h2>
+                  <div  id = "below-title-content">
+                    <p class = "content-title">Build Rewards & Save Money</p>
+                    <p class = "content-paragraph">&nbsp;At Pacifica, we are proud to honor an amazing rewards program to help you save money and earn points for your loyalty to our spa. We use our rewards program as a way to show our appreciation to our clients like you! If you are a rewards member already, simply email us or ask your specialist for how many points you have earned.</p>
+                    <p class = "content-title">Earn Points!</p>
+                    <div class = "icons-ref">
+                        <div class = "icon-ref">
+                          <i class = "fa fa-dollar fa-3x"></i>
+                          <p class = "icon-title-ref">Every $10 Spent</p>
+                          <p class = "icon-text-ref">Earn 50 points for every $10 spent on Massages and Facials. Earn 25 points for every $10 spent on Beauty.</p>
                         </div>
-                        <p class = "about-title-ref">Reward Deals!</p>
-                        <p class = "about-paragraph">&nbsp;You're probably wondering how you can spend these points, so let me enlighten you! For every 1000 points you earn, you can earn 10% off any service. Every 2500 points earns you a free facial of your choice. Finally, every 5000 points, earns you 50% off all beauty services and a free service of your choice. </p>
-
-                          <p class = "about-title-ref">Become a Member & Earn 100 Points Today: </p>
-                          <div class = "membership-div">
-
+                        <div class = "icon-ref icon-middle">
+                          <i class = "fa fa-birthday-cake fa-3x"></i>
+                          <p class = "icon-title-ref">On Your Birthday</p>
+                          <p class = "icon-text-ref">Every year, we'd love to award you with 250 points and a free facial for becoming a whole year wiser!</p>
+                        </div>
+                        <div class = "icon-ref">
+                          <i class = "fa fa-phone fa-3x"></i>
+                          <p class = "icon-title-ref">Refer a Friend</p>
+                          <p class = "icon-text-ref">For every friend that you reccomend, you will gain 150 points and they will gain 100 points to start.</p>
+                        </div>
+                      </div>
+                      <p class = "content-title">Reward Deals!</p>
+                      <p class = "content-paragraph">&nbsp;You're probably wondering how you can spend these points, so let me enlighten you! For every 1000 points you earn, you can earn 10% off any service. Every 2500 points earns you a free facial of your choice. Finally, every 5000 points, earns you 50% off all beauty services and a free service of your choice. </p>
+                      <p class = "content-title">Become a Member & Earn 100 Points Today: </p>
+                        <div class = "membership-div">
                           <div class = "across">
                             <div>
                             <label>Name:</label>
@@ -94,40 +61,14 @@
                           <div>
                             <a href = "#"><button class = "rewards-sign-up">Sign Up</button></a>
                           </div>
-                      </div>
-                      </div>
                         </div>
-                          </div>
-                          </div>
-                        <div id="right-arm"></div>
                       </div>
-                      <div class = "background-footer"></div>
-              <footer class="footer">
-                <div class = "footer-container">
-                  <div class = "footer-side" >
-                    <p class = "footer-title">Hours</p>
-                    <div class  = "hours">
-                      <p class = "footer-hours"><b>Monday - Friday:</b> 10:00 a.m. - 5:00 p.m.<br><b>Saturday:</b> 9:00 a.m. - 6:00 p.m.<br><b>Sunday:</b> closed</p>
-                  </div>
-                  </div>
-                  <div class = "footer-middle">
-                    <p class = "footer-title pacifica">Pacifica</p>
-                    <p class = "footer-text">We at Pacifica are commited to giving each customer a satisfying, relaxing, and enjoyable experience.</p>
-                    <ul class="social-icons">
-                      <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                      <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a class="linkedin" href="#"><i class="fa fa-instagram"></i></a></li>   
-                    </ul>
-                  </div>
-                  <div class = "footer-side">
-                    <p class = "footer-title">Contact</p>
-                    <div class = "contact">
-                      <p class = "footer-contact">1329 Oakland Street, St. Paul, Minnesota 55119<br><b>Email:</b> pacifica-spa@gmail.com<br><b>Phone:</b> 651-578-9699</p>
-                  </div>
+                    </div>
                   </div>
                 </div>
-                <div class = "footer-copyright"><p>Copyright 2020 &copy; All rights reserved.</p></div>
+                <div class = "background-footer"></div>
+              <footer class="footer">
+                <script src="footer.js"></script>
               </footer>
-            </div>
         </body>
     </html>
