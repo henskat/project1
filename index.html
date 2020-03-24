@@ -11,6 +11,7 @@
             <link href="https://fonts.googleapis.com/css?family=Bellota+Text&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
             <meta name="viewport" content="width=device-width,initial-scale=1">
+            <script defer src = "navbarFunctionality.js"></script>
         </head>
         <body>
             <header>
@@ -280,18 +281,6 @@
             popUp.classList.add('exit'); 
             setTimeout(loadAfterTime, 4000)
           });
-          const menuButton = document.getElementById('menu-button');
-          const navigation = document.getElementById('navigation');
-    
-          menuButton.addEventListener('click', event => {
-            navigation.classList.toggle('open');
-            menuButton.classList.toggle('active');
-            event.stopPropagation();
-          });
 
-          document.addEventListener('click', () => {
-            navigation.classList.remove('open');
-            menuButton.classList.remove('active');
-          });
         </script>
     </html>
