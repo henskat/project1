@@ -85,14 +85,15 @@
  }
 
  @media(max-width: 805px){
+     .card-image{
+         height: 100%;
+     }
     .service-card{
-        width: 80%;
+        width: 100%;
         flex-direction: row;
+        height: 250px;
     }
-    .card-image{
-        display: inline;
 
-    }
     .cards-first-row {
         justify-content: center;
     }
@@ -100,10 +101,11 @@
         margin-left: 2px;
     }
     .card-picture-div{
-        width: 100%;
         height: 100%;
+    }
+    .card-image{
+        display: inline;
         object-fit: cover;
-        align-self: center;
     }
     .card-text-div{
         width: 100%;
@@ -114,6 +116,7 @@
  }
   @media(max-width: 600px){
     .service-card{
+        width: 80%;
         flex-direction: column;
         height: fit-content;
     }
