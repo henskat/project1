@@ -22,8 +22,15 @@
     display: flex;
     flex-direction: column;
     padding: 30px;
+    animation-name: stretch;
 }
-
+@keyframes mynewmove {
+  from {
+    opacity: 0.1;
+    transform: scale(0.5);
+  }
+  to {transform: scale(1);}
+}
 .pop-up-exit{
     font-size: 125%;
     position: absolute;
