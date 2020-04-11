@@ -66,7 +66,7 @@ a, .title>a{
     border-radius: 15px 5px 15px 5px;
     cursor: pointer;
 }
-.category:hover{
+.category:hover {
  background-color: rgba(0,0,0,0.65);
 }
 header{
