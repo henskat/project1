@@ -13,7 +13,7 @@
 .pop-up{
     position: fixed;
     width: 40%;
-    height: 60%;
+    height: auto;
     box-sizing: border-box;
     z-index: 100;
     background-color:#dbe9e9;
