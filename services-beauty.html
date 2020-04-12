@@ -1,94 +1,168 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <title>Pacifica</title>
-            <link rel='shortcut icon' type='image/png' href='images/pacifica.png' />
-            <link href = "css/style-nav-footer.css" rel="stylesheet" type="text/css">
-            <link href = "css/style-body.css" rel = "stylesheet" type = "text/css">
-            <link href = "css/style-services.css" rel="stylesheet" type="text/css">
-            <link href = "css/style-shared.css" rel = "stylesheet" type = "text/css">
-            <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link href="https://fonts.googleapis.com/css?family=Bellota+Text&display=swap" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-            <meta name="viewport" content="width=device-width,initial-scale=1">
-            <script defer src = "js/navbarFunctionality.js"></script>
-        </head>
-        <body>
-            <header>
-              <script src="js/navbar.js"></script>
-            </header>
-            <div class = "background-header"></div>
-            <div id = "body">
-              <div id = "body-content">
-              <h2 class = "body-title blue">Beauty</h2>
-              <div id = "below-title-content">
-                      <div class = "services-links">
-                        <p class = "services-link facials"><a class = "link facial" href = "services-facials.html" >Facials</a></p>
-                        <p class = "services-link massages"><a class = "link massage" href = "services-massages.html" >Massages</a></p>
-                        <p class = "services-link beauty"><a class = "link beauty" href = "services-beauty.html" style = "background-color: rgba(159,95,95, .15);">Beauty</a></p>
-                      </div>
-                       <div class = "all-cards">
-                          <div class = "cards-first-row">
-                            <div class = "service-card">
-                              <div class = "card-picture-div">
-                                <img alt = "Woman with dark smokey makeup and red lipstick" src = "images/services/full_face_makeup.jpeg" class = "card-image">
-                                </div>
-                                <div class = "card-text-div">
-                                <span class = "service-title-container"><p class = "service-card-title">Full Glam</p><p class = "service-cost">$195</p></span>
-                                <p class = "card-text">A makeup session designed to suit your needs for a wedding, prom, or any special event.</p>
-                                <a href = "#"><button class = "card-buy">Book</button></a>
-                                </div>
-                            </div>
-                            <div class = "service-card">
-                              <div class = "card-picture-div">
-                                <img alt = "Woman with light brown eyeshadow and light pink lip gloss" src = "images/services/everyday_makeup.jpeg" class = "card-image">
-                                </div>
-                                <div class = "card-text-div">
-                                <span class = "service-title-container"><p class = "service-card-title">Everyday Glam</p><p class = "service-cost">$95</p></span>
-                                <p class = "card-text">The perfect makeup for a date night out, an informal event, or a homecoming dance.</p>
-                                <a href = "#"><button class = "card-buy">Book</button></a>
-                                </div>
-                            </div>
-                            <div class = "service-card">
-                              <div class = "card-picture-div">
-                                <img alt = "Half of woman's face with eyelash extensions shown" src = "images/services/eyelash_extensions.jpeg" class = "card-image">
-                                </div>
-                                <div class = "card-text-div">
-                                <span class = "service-title-container"><p class = "service-card-title">Eyelash Extensions</p><p class = "service-cost">$90</p></span>
-                                <p class = "card-text">The easiest way to wake up looking flawlessy and leave the house confidently without makeup.</p>
-                                <a href = "#"><button class = "card-buy">Book</button></a>
-                                </div>
-                            </div>
-                            <div class = "service-card">
-                              <div class = "card-picture-div">
-                                <img alt = "Eye of a woman shown with curled, long eyelashes" src = "images/services/eyelash_lift.jpeg" class = "card-image">
-                                </div>
-                                <div class = "card-text-div">
-                                <span class = "service-title-container"><p class = "service-card-title">Lash Lift</p><p class = "service-cost">$85</p></span>
-                                <p class = "card-text">If you're looking for a low maintenance and natural change then this will add that perfect spark.</p>
-                                <a href = "#"><button class = "card-buy">Book</button></a>
-                                </div>
-                            </div>
-                            <div class = "service-card">
-                              <div class = "card-picture-div">
-                                <img alt = "Woman with full eyebrows shown with wheat covering most of face" src = "images/services/eyebrow_threading.jpeg" class = "card-image">
-                                </div>
-                                <div class = "card-text-div">
-                                <span class = "service-title-container"><p class = "service-card-title">Eyebrow Threading</p><p class = "service-cost">$30</p></span>
-                                <p class = "card-text">Looking for those perfectly shaped brows? Try a quick and easy eyebrow threading session.</p>
-                                <a href = "#"><button class = "card-buy">Book</button></a>
-                                </div>
-                              </div>
-                          </div>
-                        </div>
-                    </div>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/png" href="images/pacifica.png" />
+    <title>Pacifica</title>
+    <link rel="shortcut icon" type="image/png" href="images/pacifica.png" />
+    <link href="css/style-nav-footer.css" rel="stylesheet" type="text/css" />
+    <link href="css/style-body.css" rel="stylesheet" type="text/css" />
+    <link href="css/style-services.css" rel="stylesheet" type="text/css" />
+    <link href="css/style-shared.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bellota+Text&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <script defer src="js/navbarFunctionality.js"></script>
+  </head>
+  <body>
+    <header>
+      <script src="js/navbar.js"></script>
+    </header>
+    <div class="background-header"></div>
+    <div id="body">
+      <div id="body-content">
+        <h2 class="body-title blue">Beauty</h2>
+        <div id="below-title-content">
+          <div class="services-links">
+            <p class="services-link facials">
+              <a class="link facial" href="services-facials.html">Facials</a>
+            </p>
+            <p class="services-link massages">
+              <a class="link massage" href="services-massages.html">Massages</a>
+            </p>
+            <p class="services-link beauty">
+              <a
+                class="link beauty"
+                href="services-beauty.html"
+                style="background-color: rgba(159, 95, 95, 0.15);"
+                >Beauty</a
+              >
+            </p>
+          </div>
+          <div class="all-cards">
+            <div class="cards-first-row">
+              <div class="service-card">
+                <div class="card-picture-div">
+                  <img
+                    alt="Woman with dark smokey makeup and red lipstick"
+                    src="images/services/full_face_makeup.jpeg"
+                    class="card-image"
+                  />
                 </div>
+                <div class="card-text-div">
+                  <span class="service-title-container"
+                    ><p class="service-card-title">Full Glam</p>
+                    <p class="service-cost">$195</p></span
+                  >
+                  <p class="card-text">
+                    A makeup session designed to suit your needs for a wedding,
+                    prom, or any special event.
+                  </p>
+                  <a href="#"><button class="card-buy">Book</button></a>
                 </div>
-                <div class = "background-footer"></div>
+              </div>
+              <div class="service-card">
+                <div class="card-picture-div">
+                  <img
+                    alt="Woman with light brown eyeshadow and light pink lip gloss"
+                    src="images/services/everyday_makeup.jpeg"
+                    class="card-image"
+                  />
+                </div>
+                <div class="card-text-div">
+                  <span class="service-title-container"
+                    ><p class="service-card-title">Everyday Glam</p>
+                    <p class="service-cost">$95</p></span
+                  >
+                  <p class="card-text">
+                    The perfect makeup for a date night out, an informal event,
+                    or a homecoming dance.
+                  </p>
+                  <a href="#"><button class="card-buy">Book</button></a>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="card-picture-div">
+                  <img
+                    alt="Half of woman's face with eyelash extensions shown"
+                    src="images/services/eyelash_extensions.jpeg"
+                    class="card-image"
+                  />
+                </div>
+                <div class="card-text-div">
+                  <span class="service-title-container"
+                    ><p class="service-card-title">Eyelash Extensions</p>
+                    <p class="service-cost">$90</p></span
+                  >
+                  <p class="card-text">
+                    The easiest way to wake up looking flawlessy and leave the
+                    house confidently without makeup.
+                  </p>
+                  <a href="#"><button class="card-buy">Book</button></a>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="card-picture-div">
+                  <img
+                    alt="Eye of a woman shown with curled, long eyelashes"
+                    src="images/services/eyelash_lift.jpeg"
+                    class="card-image"
+                  />
+                </div>
+                <div class="card-text-div">
+                  <span class="service-title-container"
+                    ><p class="service-card-title">Lash Lift</p>
+                    <p class="service-cost">$85</p></span
+                  >
+                  <p class="card-text">
+                    If you're looking for a low maintenance and natural change
+                    then this will add that perfect spark.
+                  </p>
+                  <a href="#"><button class="card-buy">Book</button></a>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="card-picture-div">
+                  <img
+                    alt="Woman with full eyebrows shown with wheat covering most of face"
+                    src="images/services/eyebrow_threading.jpeg"
+                    class="card-image"
+                  />
+                </div>
+                <div class="card-text-div">
+                  <span class="service-title-container"
+                    ><p class="service-card-title">Eyebrow Threading</p>
+                    <p class="service-cost">$30</p></span
+                  >
+                  <p class="card-text">
+                    Looking for those perfectly shaped brows? Try a quick and
+                    easy eyebrow threading session.
+                  </p>
+                  <a href="#"><button class="card-buy">Book</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="background-footer"></div>
 
-              <footer class="footer">
-                <script src="js/footer.js"></script>
-              </footer>
-        </body>
-    </html>
+    <footer class="footer">
+      <script src="js/footer.js"></script>
+    </footer>
+  </body>
+</html>
