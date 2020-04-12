@@ -1,71 +1,73 @@
-
-.pop-up-background{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 600;
-    background-color: rgba(0, 0, 0, 0.45);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 2%;
+.pop-up-background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 600;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 2%;
 }
-.pop-up{
-    position: fixed;
-    width: 500px;
-    height: auto;
-    box-sizing: border-box;
-    z-index: 100;
-    background-color:#dbe9e9;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
-    border: 6px #93bebd double;
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    animation-name: stretch;
+.pop-up {
+  position: fixed;
+  width: 500px;
+  height: auto;
+  box-sizing: border-box;
+  z-index: 100;
+  background-color: #dbe9e9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  border: 6px #93bebd double;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  animation-name: stretch;
 }
 @keyframes mynewmove {
   from {
     opacity: 0.1;
     transform: scale(0.5);
   }
-  to {transform: scale(1);}
+  to {
+    transform: scale(1);
+  }
 }
-.pop-up-exit{
-    font-size: 125%;
-    position: absolute;
-    left: 94%;
-    top: -1%;
-    cursor: pointer;
-    color: rgba(0, 0, 0, 0.4);
-}
-
-.pop-up-exit:hover{
-    color: rgba(0, 0, 0, 0.75);
+.pop-up-exit {
+  font-size: 125%;
+  position: absolute;
+  left: 94%;
+  top: -1%;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.4);
 }
 
-.pop-up-title{
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    align-self: center;
-    border-bottom: 2px white solid;
-    color:      #282828;
-    margin-top: 22px;
-    margin-bottom: 22px;
-    text-align: center;
-}
-.pop-up-text{
-    color: #202020;
-    font-size: 1em;
-    margin-top: 0px;
-    text-align: center;
-    letter-spacing: 1px;
-    padding-right: 2%;
-    padding-left: 2%;
+.pop-up-exit:hover {
+  color: rgba(0, 0, 0, 0.75);
 }
 
-.pop-up-input, .pop-up-submit{
+.pop-up-title {
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  align-self: center;
+  border-bottom: 2px white solid;
+  color: #282828;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  text-align: center;
+}
+.pop-up-text {
+  color: #202020;
+  font-size: 1em;
+  margin-top: 0px;
+  text-align: center;
+  letter-spacing: 1px;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+.pop-up-input,
+.pop-up-submit {
   align-self: center;
   width: 200px;
   height: auto;
@@ -73,485 +75,488 @@
   padding: 5px;
 }
 
-.pop-up-input{
-    letter-spacing: 1px;
-    text-align: center;
-    margin-bottom: 2%;
+.pop-up-input {
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 2%;
 }
 
-.pop-up-submit{
-    background-color: rgba(0, 0, 0, 0.25);
-    border: 3px white solid;
-    color: white;
-    cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    outline: none;
+.pop-up-submit {
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 3px white solid;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  outline: none;
 }
 
-.pop-up-submit:hover{
-    background-color: rgba(0, 0, 0, 0.55);
+.pop-up-submit:hover {
+  background-color: rgba(0, 0, 0, 0.55);
 }
 
-.pop-up-later{
-    align-self: center;
-    text-align: center;
-    border: none;
-    background-color: rgba(0, 0, 0, 0);
-    font-weight: 200;
-    font-size: 1.25em;
-    color: #484848;
-    cursor: pointer;
+.pop-up-later {
+  align-self: center;
+  text-align: center;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: 200;
+  font-size: 1.25em;
+  color: #484848;
+  cursor: pointer;
 }
 
-.pop-up-later:hover{
-    color: #282828;
+.pop-up-later:hover {
+  color: #282828;
 }
-.pop-up-valid-email{
-    color: red;
-    margin-top: 0px;
-    text-align: center;
-    font-size: 1em;
-}
-
-.exit{
-    display:none;
+.pop-up-valid-email {
+  color: red;
+  margin-top: 0px;
+  text-align: center;
+  font-size: 1em;
 }
 
-.image-container{
-    background-image: url("../images/stone_massage_2.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    position: relative;
-}
-.advert-container{
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.exit {
+  display: none;
 }
 
-.book-now{
-    width: 165px;
-    height: 53px;
-    background-color: rgba(0, 0, 0, 0.25);
-    border: 3px white solid;
-    font-size: 1.15em;
-    color: white;
-    cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    outline: none;
+.image-container {
+  background-image: url("../images/stone_massage_2.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
 }
-.book-advert{
-    font-size: 1.25em;
-    color: white;
-    letter-spacing: 2px;
-    z-index: 1200;
-}
-
-.book-now:hover{
-    background-color: rgba(0, 0, 0, 0.55);
+.advert-container {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.triangle{
-        border-bottom: solid 200px white;
-        border-left: solid 300px transparent;
-        border-right: solid 300px transparent;
-        position: absolute;
-        top: 75%;
+.book-now {
+  width: 165px;
+  height: 53px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 3px white solid;
+  font-size: 1.15em;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  outline: none;
 }
-.rectangle{
-    position: absolute;
-    width: 100%;
-    height: 25%;
-    background-color: white;
-    top: 90%;
+.book-advert {
+  font-size: 1.25em;
+  color: white;
+  letter-spacing: 2px;
+  z-index: 1200;
 }
 
-#body{
+.book-now:hover {
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.triangle {
+  border-bottom: solid 200px white;
+  border-left: solid 300px transparent;
+  border-right: solid 300px transparent;
+  position: absolute;
+  top: 75%;
+}
+.rectangle {
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  background-color: white;
+  top: 90%;
+}
+
+#body {
   margin-top: 100px;
 }
 
-#root, #root-two{
-    width: 100%;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 95%;
-    z-index: 10;
-  }
-  
-  #chester {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  #left-arm {
-    flex-basis: 30%;
-  }
-  
-  #right-arm {
-    flex-basis: 30%;
-  }
-
-  #torso {
-    flex-grow: 2;
-
-    display: flex;
-    flex-direction: row;
-  }
-
-  .about-texts {
-      padding-left: 25px;
-      padding-right: 25px;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-  }
-  .about-title{
-      font-size: 1.75em;
-      background-color: rosybrown;
-      padding: 12px;
-      color: white;
-      border-left: 9px solid rgb(159,95,95);
-      margin-top: 0;
-  }
-  .about-paragraph{
-      font-size: 1em;
-      margin-top: 0;
-  }
- 
-  .center{
-      margin-top: 100px;
-      margin-bottom: 100px;
-      background-color:#D0D0D0;
-      height: auto;
-      width: 100%;
-  }
-
-  .our-services {
-    font-size: 34px;
-    margin: 30px;
-    align-self: center;
-    text-align: center;
-    color:  #484848;
-  }
-
-  #our-services-div{
-    background-color:#D0D0D0;
-  }
-
-  .cards, .torso{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-evenly;
-    margin-bottom: 30px;
-  }
-  
-  #center-left-arm {
-    flex-basis: 50%;
-  }
-  
-  #center-right-arm {
-    flex-basis: 50%;
-  }
-
-  .card-image{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-  }
-
-  .card-view{
-    width: 100%;
-    border: 3px #93bebd solid;
-    background-color: #93bebd;
-    color: white;
-    font-size: 1.05em;
-    cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    outline: none;
-    font-weight: 400;
-    align-self: center;
-    margin-top: 1%;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-bottom: 5px;
-  }
-
-  .card-view:hover{
-    border: 3px solid #69a5a3;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-
-  .subscribe-footer {
-    margin-top: 100px;
-    width: 100%;
-    height: 215px;
-    background-color:   #787878;
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    border-top: 5px double #A0A0A0;
-    border-bottom: 5px double #A0A0A0;
-  }
-
-  .subscribe-title {
-      font-size: 17pt;
-      margin: 0;
-      letter-spacing: 1px;
-  }
-
-  .subscribe-text{
-      font-size: 1em;
-  }
-
-  .subscribe-input {
-    width: 300px;
-    height: 40px;
-    align-self: center;
-    font-size: 1em;
-    color: grey;
-    text-align: center;
-  }
-  .subscribe-submit{
-      width: 25px;
-      align-self: center;
-      margin-top: 5px;
-      width: 300px;
-      height: 45px;
-      border: 2px #69a5a3 solid;
-      background-color:#69a5a3;
-      font-size: 1em;
-      color: white;
-      cursor: pointer;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      outline: none;
-      font-weight: 400;
-  }
-
-  .subscribe-submit:hover{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-
-
-.review{
-    width: 300px;
-    height: 250px;
-    box-sizing: border-box;
-    border: 2px solid rosybrown;
-    margin-right: 5%;
-    margin-left: 5%;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 25px 40px -20px rgba(0, 0, 0, 0.2);
+#root,
+#root-two {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 95%;
+  z-index: 10;
 }
 
-.review-one, .review-two, .review-three{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+#chester {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+#left-arm {
+  flex-basis: 30%;
+}
+
+#right-arm {
+  flex-basis: 30%;
+}
+
+#torso {
+  flex-grow: 2;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.about-texts {
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.about-title {
+  font-size: 1.75em;
+  background-color: rosybrown;
+  padding: 12px;
+  color: white;
+  border-left: 9px solid rgb(159, 95, 95);
+  margin-top: 0;
+}
+.about-paragraph {
+  font-size: 1em;
+  margin-top: 0;
+}
+
+.center {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: #d0d0d0;
+  height: auto;
+  width: 100%;
+}
+
+.our-services {
+  font-size: 34px;
+  margin: 30px;
+  align-self: center;
+  text-align: center;
+  color: #484848;
+}
+
+#our-services-div {
+  background-color: #d0d0d0;
+}
+
+.cards,
+.torso {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+#center-left-arm {
+  flex-basis: 50%;
+}
+
+#center-right-arm {
+  flex-basis: 50%;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-view {
+  width: 100%;
+  border: 3px #93bebd solid;
+  background-color: #93bebd;
+  color: white;
+  font-size: 1.05em;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  outline: none;
+  font-weight: 400;
+  align-self: center;
+  margin-top: 1%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+.card-view:hover {
+  border: 3px solid #69a5a3;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.subscribe-footer {
+  margin-top: 100px;
+  width: 100%;
+  height: 215px;
+  background-color: #787878;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border-top: 5px double #a0a0a0;
+  border-bottom: 5px double #a0a0a0;
+}
+
+.subscribe-title {
+  font-size: 17pt;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.subscribe-text {
+  font-size: 1em;
+}
+
+.subscribe-input {
+  width: 300px;
+  height: 40px;
+  align-self: center;
+  font-size: 1em;
+  color: grey;
+  text-align: center;
+}
+.subscribe-submit {
+  width: 25px;
+  align-self: center;
+  margin-top: 5px;
+  width: 300px;
+  height: 45px;
+  border: 2px #69a5a3 solid;
+  background-color: #69a5a3;
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  outline: none;
+  font-weight: 400;
+}
+
+.subscribe-submit:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.review {
+  width: 300px;
+  height: 250px;
+  box-sizing: border-box;
+  border: 2px solid rosybrown;
+  margin-right: 5%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 40px -20px rgba(0, 0, 0, 0.2);
+}
+.review-one,
+.review-two,
+.review-three {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .reviews-title {
-    font-size: 1.75em;
-    background-color: rosybrown;
-    padding: 12px;
-    color: white;
-    border-left: 9px solid rgb(159,95,95);
-    margin-top: 0;
+  font-size: 1.75em;
+  background-color: rosybrown;
+  padding: 12px;
+  color: white;
+  border-left: 9px solid rgb(159, 95, 95);
+  margin-top: 0;
 }
-.arrows{
-    float: right;
-    transform: rotate(90deg);
-}
-
-.stars{
-    align-self: center;
-}
-.fa-star{
-    color: #F8De7e;
-    margin-top: 10px;
-    padding: 7px;
+.arrows {
+  float: right;
+  transform: rotate(90deg);
 }
 
-.empty{
-    text-shadow: 0px 0px 1px goldenrod, 0px 0px 1px goldenrod;
-    color: white; 
+.stars {
+  align-self: center;
+}
+.fa-star {
+  color: #f8de7e;
+  margin-top: 10px;
+  padding: 7px;
 }
 
-.up:hover, .down:hover {
-    cursor: pointer;
-    opacity: 1;
+.empty {
+  text-shadow: 0px 0px 1px goldenrod, 0px 0px 1px goldenrod;
+  color: white;
 }
 
-.up, .down{
-    margin-right: 2px;
-    font-weight: 600;
-    opacity: 0.5;
-    user-select: none;
+.up:hover,
+.down:hover {
+  cursor: pointer;
+  opacity: 1;
 }
 
-.elementToFadeInAndOut{
-    animation-timing-function: ease-in-out 1s;
+.up,
+.down {
+  margin-right: 2px;
+  font-weight: 600;
+  opacity: 0.5;
+  user-select: none;
 }
 
-.review-circle{
-    margin-top: 30px;
-    text-align: center;
-    font-size: 0.75em;
-    color: 		#989898;
+.elementToFadeInAndOut {
+  animation-timing-function: ease-in-out 1s;
+}
+
+.review-circle {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.75em;
+  color: #989898;
 }
 
 .fade-in {
-    animation: fadeIn ease-in 1s;
-    -webkit-animation: fadeIn ease-in 1s;
-    -moz-animation: fadeIn ease-in 1s;
-    -o-animation: fadeIn ease-in 1s;
-    -ms-animation: fadeIn ease-in 1s;
-  }
-  
+  animation: fadeIn ease-in 1s;
+  -webkit-animation: fadeIn ease-in 1s;
+  -moz-animation: fadeIn ease-in 1s;
+  -o-animation: fadeIn ease-in 1s;
+  -ms-animation: fadeIn ease-in 1s;
+}
 
-  @keyframes fadeIn{
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  
-  @-moz-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
+  100% {
+    opacity: 1;
   }
-  
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-o-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-ms-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
+}
 
-  @media(max-width: 1000px){
-    .cards{
-        flex-direction: column;
-        align-items: center;
-    }
-    .card{
-        width: 75%;
-        flex-direction: row;
-        margin-bottom: 20px;
-    }
-    .card-picture-div{
-        align-self: center;
-        display: flex;
-    }
-    .card-image{
-        object-fit: cover;
-        align-self: center;
-    }
-    .card-text-div{
-        width: 60%;
-    }
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-
-  @media(max-width: 900px){
-    .pop-up{
-        width: 70%;
-        height: auto;
-    }
+  100% {
+    opacity: 1;
   }
-  @media (max-width: 800px) {
+}
 
-      .review-one, .review-two, .review-three{
-        flex-direction: column;
-    }
-    .review{
-        margin-bottom: 20px;
-    }
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
-      .review-circle{
-          display: none;
-      }
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
+@media (max-width: 1000px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 75%;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  .card-picture-div {
+    align-self: center;
+    display: flex;
+  }
+  .card-image {
+    object-fit: cover;
+    align-self: center;
+  }
+  .card-text-div {
+    width: 60%;
+  }
+}
+
+@media (max-width: 900px) {
+  .pop-up {
+    width: 70%;
+    height: auto;
+  }
+}
+@media (max-width: 800px) {
+  .review-one,
+  .review-two,
+  .review-three {
+    flex-direction: column;
+  }
+  .review {
+    margin-bottom: 20px;
   }
 
-  @media (max-width: 600px) {
-    .pop-up{
-        width: 100%;
-        height: auto;
-    }
-    .card-image{
-        display: none;
-    }
-    .card-picture-div{
-        display: none;
-    }
-    .card-text-div{
-        width: 100%;
-    }
-    .image-container{
-        width: 100%;
-        height: 50vh;
-    }
-    .book-advert{
-        display: none;
-    }
-    #root{
-        margin-top: -200px;
-    }
-    .book-now{
-        background-color: rgba(0, 0, 0, 0.35);
-    }
-    .subscribe-input, .subscribe-submit{
-        width: 75%;
-    }
-    .triangle, .rectangle{
-        display: none;
-    }
+  .review-circle {
+    display: none;
+  }
+}
 
-
+@media (max-width: 600px) {
+  .pop-up {
+    width: 100%;
+    height: auto;
+  }
+  .card-image {
+    display: none;
+  }
+  .card-picture-div {
+    display: none;
+  }
+  .card-text-div {
+    width: 100%;
+  }
+  .image-container {
+    width: 100%;
+    height: 50vh;
+  }
+  .book-advert {
+    display: none;
+  }
+  #root {
+    margin-top: -200px;
+  }
+  .book-now {
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+  .subscribe-input,
+  .subscribe-submit {
+    width: 75%;
+  }
+  .triangle,
+  .rectangle {
+    display: none;
+  }
 }

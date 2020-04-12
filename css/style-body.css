@@ -1,71 +1,73 @@
-.background-header, .background-footer{
-    background-image: url("../images/marble_background_2.jpg");
+.background-header,
+.background-footer {
+  background-image: url("../images/marble_background_2.jpg");
+  width: 100%;
+  height: 175px;
+}
+.background-footer {
+  height: 50px;
+}
+
+#body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#body-content {
+  display: flex;
+  flex-direction: column;
+  width: 78%;
+  margin-bottom: 60px;
+}
+
+#below-title-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.body-title {
+  font-weight: normal;
+  font-size: 1.75em;
+  padding: 12px;
+  color: white;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pink {
+  background-color: rosybrown;
+  border-left: 9px solid rgb(159, 95, 95);
+}
+
+.blue {
+  border-left: 9px solid #69a5a3;
+  background-color: #93bebd;
+}
+
+.content-title {
+  color: rosybrown;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.content-paragraph {
+  line-height: 1.5;
+  font-size: 1em;
+  margin-top: 0;
+}
+
+@media (max-width: 800px) {
+  .background-header,
+  .background-footer {
+    height: 100px;
+  }
+  #below-title-content {
     width: 100%;
-    height: 175px;
-}
-.background-footer{
-    height: 50px;
-}
-
-#body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#body-content{
-    display: flex;
-    flex-direction: column;
-    width: 78%;
-    margin-bottom: 60px;
-}
-
-#below-title-content{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-}
-
-.body-title{
-    font-weight: normal;
-    font-size: 1.75em;
-    padding: 12px;
-    color: white;
-    margin-top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
-
-  .pink{
-    background-color: rosybrown;
-    border-left: 9px solid rgb(159,95,95);
-  }
-
-  .blue{
-    border-left: 9px solid #69a5a3;
-    background-color: #93bebd;
-  }
-
-  .content-title{
-    color: rosybrown;
-    font-size: 1.5em;
-    font-weight: 500;
-}
-
-.content-paragraph{
-    line-height: 1.5;
-    font-size: 1em;
-    margin-top: 0;
-}
-
-@media(max-width: 800px){
-    .background-header, .background-footer{
-        height: 100px;
-    }
-    #below-title-content{
-        width: 100%;
-    }
 }

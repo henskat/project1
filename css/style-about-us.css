@@ -1,19 +1,19 @@
-  .quote-paragraph{
-      background-color:	#E0E0E0;
-      color: #484848;
-      font-size: 1.3em;
-      letter-spacing: 1px;
-      padding: 12px;      
-      border-left: 9px solid #93bebd;
-      margin-bottom: 20px;
-      box-sizing: border-box;
-      margin-top: 20px;
-      margin-right: 10%;
-      margin-left: 10%;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  
-  .quote{
-      font-size: 1.75em;
-        color: #69a5a3;
-  }
+.quote-paragraph {
+  background-color: #e0e0e0;
+  color: #484848;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  padding: 12px;
+  border-left: 9px solid #93bebd;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-right: 10%;
+  margin-left: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.quote {
+  font-size: 1.75em;
+  color: #69a5a3;
+}

@@ -1,40 +1,36 @@
-.gift-card-picture{
-    float: right;
+.gift-card-picture {
+  float: right;
 }
 
-#torso-one{
-    max-width: 100%;
+#torso-one {
+  max-width: 100%;
 }
 #torso {
-    flex-direction: row-reverse;
-  }
-
-  .icon-text-ref{
-      padding: 10px;
-  }
-
-
-#gift-card-text{
-    padding-right: 35px;
+  flex-direction: row-reverse;
 }
 
+.icon-text-ref {
+  padding: 10px;
+}
 
-@media(max-width: 900px) {
-    
-    .gift-card-picture{
-        float: none;
-        max-width: 100%;
-    }
-    #torso{
-      flex-direction: column;
-    }
-    .across{
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-     }
-     #gift-card-text{
-      padding: 0px;
+#gift-card-text {
+  padding-right: 35px;
+}
+
+@media (max-width: 900px) {
+  .gift-card-picture {
+    float: none;
+    max-width: 100%;
   }
-
+  #torso {
+    flex-direction: column;
+  }
+  .across {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  #gift-card-text {
+    padding: 0px;
+  }
 }

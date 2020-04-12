@@ -1,54 +1,55 @@
-input, label{
-    margin: 8px;
-    height: 25px;
-    font-size: 1em;
+input,
+label {
+  margin: 8px;
+  height: 25px;
+  font-size: 1em;
 }
 
-.across{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:  space-evenly;
-    flex-wrap: wrap;
-  }
+.across {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
-.membership-div{
-   border: 1px solid rgba(188, 143, 143, .25);
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.membership-div {
+  border: 1px solid rgba(188, 143, 143, 0.25);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 15px;
 }
 
-.rewards-sign-up{
-    border: 1px rgb(159,95,95) solid;
-    background-color: white;
-    color:  rgb(159,95,95);
-    font-size: 1em;
-    outline: none;
-    font-weight: 500;
-    width: 100%;
-    height: auto;
-    cursor: pointer;
-    margin-left: 1%;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+.rewards-sign-up {
+  border: 1px rgb(159, 95, 95) solid;
+  background-color: white;
+  color: rgb(159, 95, 95);
+  font-size: 1em;
+  outline: none;
+  font-weight: 500;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  margin-left: 1%;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-.rewards-sign-up:hover{
-      background-color: rgb(159,95,95);
-      color: white;
-      transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out;
+.rewards-sign-up:hover {
+  background-color: rgb(159, 95, 95);
+  color: white;
+  transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.rewards-texts {
+  align-self: center;
+}
+
+@media (max-width: 900px) {
+  .across {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
   }
-
-.rewards-texts{
-    align-self: center;
-}
-
-@media(max-width: 900px) {
-    .across{
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-     }
 }
