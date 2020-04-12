@@ -183,7 +183,7 @@
 
 #home-content {
   position: absolute;
-  top: 100;
+  top: 100%;
   width: 100%;
 }
 
