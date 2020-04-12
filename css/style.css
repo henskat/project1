@@ -514,4 +514,7 @@
   .rectangle {
     display: none;
   }
+  #home-content {
+    position: static;
+  }
 }
