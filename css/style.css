@@ -314,10 +314,6 @@
   user-select: none;
 }
 
-.elementToFadeInAndOut {
-  animation-timing-function: ease-in-out 1s;
-}
-
 .review-circle {
   margin-top: 30px;
   text-align: center;
