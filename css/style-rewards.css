@@ -42,6 +42,11 @@ label {
   transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out;
 }
 
+.rewards-thanks {
+  text-align: center;
+  color: #303030;
+}
+
 .rewards-texts {
   align-self: center;
 }

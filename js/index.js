@@ -13,7 +13,28 @@ const reviewOne = document.getElementById("review-one");
 const reviewTwo = document.getElementById("review-two");
 const reviewThree = document.getElementById("review-three");
 const reviewCircle = document.getElementById("review-circle");
+//subscribe
+const subscribeEmailAddress = document.getElementById(
+  "subscribe-email-address"
+);
+const subscribeSignUp = document.getElementById("subscribe-sign-up");
+const subscribeSubmit = document.getElementById("subscribe-submit");
 
+function submitEmail() {
+  if (
+    subscribeEmailAddress.value.match(
+      /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/
+    )
+  ) {
+    subscribeSubmit.className = "exit";
+    subscribeEmailAddress.className = "exit";
+    subscribeSignUp.className = "";
+  } else {
+    subscribeEmailAddress.className = "subscribe-input error";
+  }
+}
+
+//reviews
 let num = 1;
 upArrow.addEventListener("click", (event) => {
   if (num === 1) {
@@ -99,5 +120,4 @@ popUpSubmit.addEventListener("click", (event) => {
 popUpLater.addEventListener("click", (event) => {
   popUpBackground.classList.add("exit");
   popUp.classList.add("exit");
-  setTimeout(loadAfterTime, 4000);
 });

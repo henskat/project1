@@ -128,7 +128,9 @@
   color: white;
   transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out;
 }
-
+.error {
+  border: red 1px solid;
+}
 @media (max-width: 800px) {
   .icons-ref {
     flex-direction: column;

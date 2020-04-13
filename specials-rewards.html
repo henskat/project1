@@ -24,8 +24,10 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <script defer src="js/navbarFunctionality.js"></script>
+    <script defer src="js/navbar-functionality.js"></script>
+    <script defer src="js/rewards.js"></script>
   </head>
+
   <body>
     <header>
       <script src="js/navbar.js"></script>
@@ -80,7 +82,7 @@
           </p>
           <p class="content-title">Become a Member & Earn 100 Points Today:</p>
           <div class="membership-div">
-            <div class="across">
+            <div class="across" id="form-elements">
               <div>
                 <label>Name:</label>
                 <input
@@ -88,6 +90,7 @@
                   placeholder=" Sarah Smith"
                   size="18"
                   required
+                  id="rewards-name"
                 />
               </div>
               <div>
@@ -97,6 +100,7 @@
                   placeholder=" example@gmail.com"
                   size="18"
                   required
+                  id="rewards-email"
                 />
               </div>
               <div>
@@ -104,15 +108,18 @@
                 <input
                   type="text"
                   placeholder=" 6515789699"
-                  maxlength="11"
                   size="18"
                   required
+                  id="rewards-phone"
                 />
               </div>
               <div>
-                <button type="submit" class="rewards-sign-up">Sign Up</button>
+                <button class="rewards-sign-up" id="sign-up">
+                  Sign Up
+                </button>
               </div>
             </div>
+            <p id="rewards-thanks" class="exit">Thanks for signing up!</p>
           </div>
         </div>
       </div>
