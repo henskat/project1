@@ -1,3 +1,4 @@
+//writes footer
 document.write(`<div class = "footer-container">`);
 document.write(`<div class = "footer-side" >`);
 document.write(`<p class = "footer-title">Hours</p>`);

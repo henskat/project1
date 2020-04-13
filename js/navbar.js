@@ -1,3 +1,4 @@
+//writes nav bar
 document.write(
   `<span class = "title"><a href = "index.html">Pacifica</a></span>`
 );
