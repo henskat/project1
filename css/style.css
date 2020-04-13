@@ -166,14 +166,14 @@
   background-color: rgba(0, 0, 0, 0.55);
 }
 
-.triangle {
+#triangle {
   border-bottom: solid 200px white;
   border-left: solid 300px transparent;
   border-right: solid 300px transparent;
   position: absolute;
   top: 75%;
 }
-.rectangle {
+#rectangle {
   position: absolute;
   width: 100%;
   height: 25%;
@@ -187,7 +187,7 @@
   width: 100%;
 }
 
-#body {
+.body {
   margin-top: 50px;
 }
 
@@ -510,8 +510,8 @@
   .subscribe-submit {
     width: 75%;
   }
-  .triangle,
-  .rectangle {
+  #triangle,
+  #rectangle {
     display: none;
   }
   #home-content {
